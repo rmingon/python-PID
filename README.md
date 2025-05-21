@@ -39,11 +39,11 @@ compute(current_value, dt) Method
 Calculates the PID output based on the current process value and the elapsed time dt.
 
 Arguments
-	•	current_value (float): Current value of the process variable
-	•	dt (float): Time difference since last computation (in seconds)
+ - current_value (float): Current value of the process variable
+ - dt (float): Time difference since last computation (in seconds)
 
 Returns
-	•	output (float): The control output, constrained by the specified output_limits
+ - output (float): The control output, constrained by the specified output_limits
 
 Example Usage
 
@@ -58,8 +58,7 @@ print(f"Control Output: {output}")
 ```
 
 Notes
-	•	Ensure dt is never zero to avoid division errors.
-	•	Integral windup is not explicitly handled; you may want to implement integral clamping for more advanced use cases.
+ - Ensure dt is never zero to avoid division errors.
 
 License
 
